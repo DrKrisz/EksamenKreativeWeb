@@ -1,0 +1,49 @@
+body {
+	background-image: url(/img/background_bilde.jpg);
+	background-size: cover;
+}
+.menu {
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	display: flex;
+	flex-direction: column;
+	transform: translate(-50%, -50%);
+	font-size: 40px;
+	text-align: center;
+}
+.menu a {
+	color: red;
+	background-color: white;
+	padding: 14px 50px;
+	margin: 10px;
+	text-decoration: none;
+	border-radius: 15px;
+}
+.menu a:hover,
+:active {
+	color: blue;
+	background-color: lightgrey;
+	animation: drunk 2s infinite;
+}
+@keyframes drunk {
+	0% {
+		transform: rotate(-5deg);
+	}
+
+	25% {
+		transform: rotate(5deg);
+	}
+
+	50% {
+		transform: rotate(-5deg);
+	}
+
+	75% {
+		transform: rotate(5deg);
+	}
+
+	100% {
+		transform: rotate(-5deg);
+	}
+}
