@@ -1,10 +1,18 @@
 body {
-  background: url(/img/background_bilde.jpg) no-repeat top center / cover;
-  backdrop-filter: blur(5px); /* Change the value to adjust the blur intensity */
+  background: no-repeat url(/img/background.jpg);
+  background-size: cover;
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer and Edge */
+  user-select: none; /* Standard syntax */
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 .menu {
   position: absolute;
-  top: 85%;
+  top: 50%;
   left: 50%;
   display: flex;
   flex-direction: column;
@@ -13,15 +21,15 @@ body {
   text-align: center;
 }
 .menu a {
-  color: red;
-  background-color: white;
+  color: black;
+  backdrop-filter: blur(10px); /* Adjust the blur value as needed */
+  transition: background-color 0.3s ease;
   padding: 14px 50px;
   margin: 10px;
   text-decoration: none;
   border-radius: 15px;
 }
-.menu a:hover,
-:active {
+.menu a:hover {
   color: blue;
   background-color: lightgrey;
   animation: drunk 2s infinite;
