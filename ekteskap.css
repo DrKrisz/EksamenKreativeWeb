@@ -16,6 +16,7 @@ body {
   width: 100%;
   background-color: aliceblue;
   text-align: center;
+  animation: ghoster 2s infinite;
 }
 
 .indexer {
@@ -23,15 +24,19 @@ body {
   justify-content: space-around;
   align-items: center;
   height: auto;
+  animation-name: slideUp;
+  animation-duration: 5s;
 }
 .indexer img {
   width: 50%;
+  animation: rotater 2s infinite;
 }
 .indexer p {
   text-align: left;
   margin: 1rem;
   padding: 1rem;
   background-color: azure;
+  animation: rainbow 4s linear infinite;
 }
 a {
   color: #3c97d4;
@@ -43,4 +48,77 @@ a {
 }
 a:hover {
   background-color: lightgrey;
+}
+@keyframes slideUp {
+  0%,
+  50% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  60%,
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes rotater {
+  0% {
+    -webkit-transform: rotate(0) scale(1, 1);
+  }
+  20% {
+    -webkit-transform: rotate(-3deg) scale(0.8, 0.8);
+  }
+  40% {
+    -webkit-transform: rotate(0) scale(1, 1);
+  }
+  60% {
+    -webkit-transform: rotate(0) scale(1, 1);
+  }
+  80% {
+    -webkit-transform: rotate(3deg) scale(0.8, 0.8);
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1, 1);
+  }
+}
+@keyframes rainbow {
+  0% {
+    color: red;
+  }
+  10% {
+    color: orange;
+  }
+  20% {
+    color: yellow;
+  }
+  30% {
+    color: green;
+  }
+  40% {
+    color: blue;
+  }
+  50% {
+    color: green;
+  }
+  60% {
+    color: yellow;
+  }
+  75% {
+    color: orange;
+  }
+  100% {
+    color: red;
+  }
+}
+@keyframes ghoster {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
