@@ -1,124 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@300&family=Playfair+Display:wght@500&display=swap");
 body {
   margin: 0;
-  background-image: url(/img/background_ekteskap.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-
-  font-family: "Roboto", sans-serif;
-  -webkit-user-select: none; /* Chrome, Safari, and Opera */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer and Edge */
-  user-select: none; /* Standard syntax */
+  font-family: "Handjet", sans-serif;
+  font-family: "Playfair Display", serif;
+  background-color: #f9f6ee;
 }
-.welcome h1 {
+
+.engagement {
+  position: relative;
   width: 100%;
-  background-color: aliceblue;
+  height: 300px; /* Set the desired height */
+  background-image: url("/img/engagement1.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
   text-align: center;
-  animation: ghoster 2s infinite;
+  color: #fffaf0; /* Text color on top of the background image */
+}
+.engagement-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+}
+/* Style for the navigation menu */
+.menu {
+  background-color: whitesmoke; /* Background color */
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
-.indexer {
+/* Style for the h1 tag */
+h1 {
+  color: black;
+  margin: 0;
+}
+
+/* Style for the individual menu items */
+.menu ul {
+  list-style-type: none;
+  display: flex;
+}
+
+/* Style for the menu links */
+.menu li {
+  margin-left: 20px;
+}
+
+.menu li a {
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.menu li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  font-family: Arial, sans-serif;
+}
+.container p {
+  order: 1;
+}
+.first {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: auto;
-  animation-name: slideUp;
-  animation-duration: 5s;
+  background-color: #f0f0f0; /* Optional background color */
 }
-.indexer img {
-  width: 50%;
-  animation: rotater 2s infinite;
-}
-.indexer p {
-  text-align: left;
-  margin: 1rem;
-  padding: 1rem;
-  background-color: azure;
-  animation: rainbow 4s linear infinite;
-}
-a {
-  color: #3c97d4;
-  cursor: pointer;
-  text-decoration: none;
-  margin-top: 500px;
-  background-color: white;
-  padding: 10px;
-}
-a:hover {
-  background-color: lightgrey;
-}
-@keyframes slideUp {
-  0%,
-  50% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
 
-  60%,
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+/* Style for the image */
+.first img {
+  max-width: 30rem;
+  height: auto;
+  order: 2;
+  border-radius: 4px;
 }
-@keyframes rotater {
-  0% {
-    -webkit-transform: rotate(0) scale(1, 1);
-  }
-  20% {
-    -webkit-transform: rotate(-3deg) scale(0.8, 0.8);
-  }
-  40% {
-    -webkit-transform: rotate(0) scale(1, 1);
-  }
-  60% {
-    -webkit-transform: rotate(0) scale(1, 1);
-  }
-  80% {
-    -webkit-transform: rotate(3deg) scale(0.8, 0.8);
-  }
-  100% {
-    -webkit-transform: rotate(0) scale(1, 1);
-  }
+.first p {
+  max-width: 400px;
 }
-@keyframes rainbow {
-  0% {
-    color: red;
-  }
-  10% {
-    color: orange;
-  }
-  20% {
-    color: yellow;
-  }
-  30% {
-    color: green;
-  }
-  40% {
-    color: blue;
-  }
-  50% {
-    color: green;
-  }
-  60% {
-    color: yellow;
-  }
-  75% {
-    color: orange;
-  }
-  100% {
-    color: red;
-  }
+.second {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f0f0f0; /* Optional background color */
 }
-@keyframes ghoster {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
+
+/* Style for the image */
+.second img {
+  max-width: 30rem;
+  height: auto;
+  border-radius: 4px;
+  order: 1;
+}
+.second p {
+  max-width: 400px;
+}
+.third {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f0f0f0; /* Optional background color */
+}
+
+/* Style for the image */
+.third img {
+  max-width: 30rem;
+  height: auto;
+  border-radius: 4px;
+  order: 1;
+}
+.third p {
+  max-width: 400px;
 }
