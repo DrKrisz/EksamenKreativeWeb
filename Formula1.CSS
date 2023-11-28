@@ -1,569 +1,539 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 .circutPage {
-  height: 100vh;
-  background: linear-gradient(45deg, #d90271, #7462ff, #30b7ff, #46ffa2);
+	height: 100vh;
+	background: linear-gradient(45deg, #d90271, #7462ff, #30b7ff, #46ffa2);
 }
 
 header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 9%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 100;
-  background-color: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 9%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+	background-color: black;
 }
 
 .navBar a {
-  padding: 15px 15px;
-  border-radius: 20px;
-  margin: 0 10px;
-  text-decoration: none;
-  font-size: 18px;
-  color: white;
-  font-family: sans-serif;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 20px;
+	padding: 15px 15px;
+	border-radius: 20px;
+	margin: 0 10px;
+	text-decoration: none;
+	font-size: 18px;
+	color: white;
+	font-family: sans-serif;
+	text-decoration: none;
+	font-weight: 500;
+	padding: 20px;
 }
 
 .navBar a:hover {
-  color: rgb(17, 232, 243);
-  font-size: 19px;
-  transition: 0.3s;
+	color: rgb(17, 232, 243);
+	font-size: 19px;
+	transition: 0.3s;
 }
 
 .navBar ul {
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
 }
 
 .navBar li {
-  display: inline;
+	display: inline;
 }
 
 .logo {
-  position: relative;
-  left: 50%;
-  transform: translate(-50%);
-  font-size: 45px;
-  margin: 0 10px;
-  font-family: sans-serif;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	font-size: 45px;
+	margin: 0 10px;
+	font-family: sans-serif;
 }
 
 .circutImg {
-  position: relative;
-  width: 70%;
-  margin-top: 5%;
-  margin-left: 15%;
+	position: relative;
+	width: 70%;
+	margin-top: 5%;
+	margin-left: 15%;
 }
 
 header h2 {
-  color: rgb(255, 255, 255);
+	color: rgb(255, 255, 255);
 }
 
 .driverPage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  min-height: 100vh;
-  background: linear-gradient(#343245, #0c0c10);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 100vh;
+	background: linear-gradient(#343245, #0c0c10);
 }
 
 .verstappenBorder {
-  position: relative;
-  width: 330px;
-  height: 460px;
-  background: black;
-  border-radius: 20px;
-  position: absolute;
-  left: 6.62%;
-  overflow: hidden;
+	position: relative;
+	width: 330px;
+	height: 460px;
+	background: black;
+	border-radius: 20px;
+	position: absolute;
+	left: 6.62%;
+	overflow: hidden;
 }
 
 .verstappenBorder::after {
-  content: "";
-  position: absolute;
-  left: -65%;
-  top: -25%;
-  width: 700px;
-  height: 700px;
-  background-image: conic-gradient(
-    transparent,
-    transparent,
-    transparent,
-    #37527e
-  );
-  animation: verstappenline 5s linear infinite;
-  animation-delay: -2.5s;
+	content: "";
+	position: absolute;
+	left: -65%;
+	top: -25%;
+	width: 700px;
+	height: 700px;
+	background-image: conic-gradient(transparent, transparent, transparent, #37527e);
+	animation: verstappenline 5s linear infinite;
+	animation-delay: -2.5s;
 }
 
 .verstappenBorder::before {
-  content: "";
-  position: absolute;
-  left: -65%;
-  top: -25%;
-  width: 700px;
-  height: 700px;
-  background-image: conic-gradient(
-    transparent,
-    transparent,
-    transparent,
-    #37527e
-  );
-  animation: verstappenline 5s linear infinite;
+	content: "";
+	position: absolute;
+	left: -65%;
+	top: -25%;
+	width: 700px;
+	height: 700px;
+	background-image: conic-gradient(transparent, transparent, transparent, #37527e);
+	animation: verstappenline 5s linear infinite;
 }
 
 @keyframes verstappenline {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 .verstappenDriverCard {
-  position: relative;
-  width: 320px;
-  height: 450px;
-  overflow: hidden;
-  border-radius: 20px;
+	position: relative;
+	width: 320px;
+	height: 450px;
+	overflow: hidden;
+	border-radius: 20px;
 }
 
 .verstappenDriverCard .verstappenPoster {
-  position: relative;
-  overflow: hidden;
-  height: 100%;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
 }
 
 .verstappenDriverCard .verstappenPoster::before {
-  content: "";
-  position: absolute;
-  bottom: -180px;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(0deg, #293e5f 50%, transparent);
-  transition: 0.5s;
-  z-index: 1;
+	content: "";
+	position: absolute;
+	bottom: -180px;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(0deg, #293e5f 50%, transparent);
+	transition: 0.5s;
+	z-index: 1;
 }
 
 .verstappenDriverCard:hover .verstappenPoster::before {
-  bottom: -15%;
+	bottom: -15%;
 }
 
 .verstappenDriverCard .verstappenPoster img {
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
-  transition: 0.5s;
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+	transition: 0.5s;
 }
 
 .verstappenDriverCard:hover .verstappenPoster img {
-  transform: translateY(-15px);
-  filter: blur(2px);
+	transform: translateY(-15px);
+	filter: blur(2px);
 }
 
 .verstappenDriverCard h2 {
-  position: absolute;
-  width: 100%;
-  bottom: 20px;
-  left: 10%;
-  color: #000000;
-  z-index: 2;
-  font-family: sans-serif;
+	position: absolute;
+	width: 100%;
+	bottom: 20px;
+	left: 10%;
+	color: #000000;
+	z-index: 2;
+	font-family: sans-serif;
 }
 
 .verstappenDriverCard:hover h2 {
-  bottom: 23%;
+	bottom: 23%;
 }
 
 .verstappenDriverCard h3 {
-  position: absolute;
-  width: 100%;
-  bottom: 2px;
-  left: 10%;
-  color: #000000;
-  z-index: 2;
-  font-family: sans-serif;
+	position: absolute;
+	width: 100%;
+	bottom: 2px;
+	left: 10%;
+	color: #000000;
+	z-index: 2;
+	font-family: sans-serif;
 }
 
 .verstappenDriverCard:hover h3 {
-  bottom: 18%;
+	bottom: 18%;
 }
 
 .verstappenDriverCard p {
-  position: absolute;
-  width: 80%;
-  bottom: -90px;
-  left: 10%;
-  color: #000000;
-  z-index: 2;
-  font-family: sans-serif;
+	position: absolute;
+	width: 80%;
+	bottom: -90px;
+	left: 10%;
+	color: #000000;
+	z-index: 2;
+	font-family: sans-serif;
 }
 
 .verstappenDriverCard:hover p {
-  bottom: 0%;
+	bottom: 0%;
 }
 
 .hamiltonBorder {
-  position: relative;
-  width: 330px;
-  height: 460px;
-  background: black;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+	position: relative;
+	width: 330px;
+	height: 460px;
+	background: black;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
 }
 
 .hamiltonBorder::after {
-  content: "";
-  position: absolute;
-  width: 700px;
-  height: 700px;
-  background-image: conic-gradient(
-    transparent,
-    transparent,
-    transparent,
-    #5df1e3
-  );
-  animation: hamiltonline 5s linear infinite;
-  animation-delay: -2.5s;
+	content: "";
+	position: absolute;
+	width: 700px;
+	height: 700px;
+	background-image: conic-gradient(transparent, transparent, transparent, #5df1e3);
+	animation: hamiltonline 5s linear infinite;
+	animation-delay: -2.5s;
 }
 
 .hamiltonBorder::before {
-  content: "";
-  position: absolute;
-  width: 700px;
-  height: 700px;
-  background-image: conic-gradient(
-    transparent,
-    transparent,
-    transparent,
-    #5df1e3
-  );
-  animation: hamiltonline 5s linear infinite;
+	content: "";
+	position: absolute;
+	width: 700px;
+	height: 700px;
+	background-image: conic-gradient(transparent, transparent, transparent, #5df1e3);
+	animation: hamiltonline 5s linear infinite;
 }
 
 @keyframes hamiltonline {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 .hamiltonDriverCard {
-  position: relative;
-  width: 320px;
-  height: 450px;
-  overflow: hidden;
-  border-radius: 20px;
+	position: relative;
+	width: 320px;
+	height: 450px;
+	overflow: hidden;
+	border-radius: 20px;
 }
 
 .hamiltonDriverCard .hamiltonPoster {
-  position: relative;
-  overflow: hidden;
-  height: 100%;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
 }
 
 .hamiltonDriverCard .hamiltonPoster::before {
-  content: "";
-  position: absolute;
-  bottom: -180px;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(0deg, #42a99f 50%, transparent);
-  transition: 0.5s;
-  z-index: 1;
+	content: "";
+	position: absolute;
+	bottom: -180px;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(0deg, #42a99f 50%, transparent);
+	transition: 0.5s;
+	z-index: 1;
 }
 
 .hamiltonDriverCard:hover .hamiltonPoster::before {
-  bottom: -15%;
+	bottom: -15%;
 }
 
 .hamiltonDriverCard .hamiltonPoster img {
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
-  transition: 0.5s;
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+	transition: 0.5s;
 }
 
 .hamiltonDriverCard:hover .hamiltonPoster img {
-  transform: translateY(-15px);
-  filter: blur(2px);
+	transform: translateY(-15px);
+	filter: blur(2px);
 }
 
 .hamiltonDriverCard h2 {
-  position: absolute;
-  width: 100%;
-  bottom: 20px;
-  left: 10%;
-  color: #000000;
-  z-index: 2;
-  font-family: sans-serif;
+	position: absolute;
+	width: 100%;
+	bottom: 20px;
+	left: 10%;
+	color: #000000;
+	z-index: 2;
+	font-family: sans-serif;
 }
 
 .hamiltonDriverCard:hover h2 {
-  bottom: 23%;
+	bottom: 23%;
 }
 
 .hamiltonDriverCard h3 {
-  position: absolute;
-  width: 100%;
-  bottom: 2px;
-  left: 10%;
-  color: #000000;
-  z-index: 2;
-  font-family: sans-serif;
+	position: absolute;
+	width: 100%;
+	bottom: 2px;
+	left: 10%;
+	color: #000000;
+	z-index: 2;
+	font-family: sans-serif;
 }
 
 .hamiltonDriverCard:hover h3 {
-  bottom: 18%;
+	bottom: 18%;
 }
 
 .hamiltonDriverCard p {
-  position: absolute;
-  width: 80%;
-  bottom: -90px;
-  left: 10%;
-  color: #000000;
-  z-index: 2;
-  font-family: sans-serif;
+	position: absolute;
+	width: 80%;
+	bottom: -90px;
+	left: 10%;
+	color: #000000;
+	z-index: 2;
+	font-family: sans-serif;
 }
 
 .hamiltonDriverCard:hover p {
-  bottom: 0%;
+	bottom: 0%;
 }
 
 .leclercBorder {
-  position: relative;
-  width: 330px;
-  height: 460px;
-  background: black;
-  border-radius: 20px;
-  position: absolute;
-  right: 6.62%;
-  overflow: hidden;
+	position: relative;
+	width: 330px;
+	height: 460px;
+	background: black;
+	border-radius: 20px;
+	position: absolute;
+	right: 6.62%;
+	overflow: hidden;
 }
 
 .leclercBorder::after {
-  content: "";
-  position: absolute;
-  left: -65%;
-  top: -25%;
-  width: 700px;
-  height: 700px;
-  background-image: conic-gradient(
-    transparent,
-    transparent,
-    transparent,
-    #f72a31
-  );
-  animation: leclercline 5s linear infinite;
-  animation-delay: -2.5s;
+	content: "";
+	position: absolute;
+	left: -65%;
+	top: -25%;
+	width: 700px;
+	height: 700px;
+	background-image: conic-gradient(transparent, transparent, transparent, #f72a31);
+	animation: leclercline 5s linear infinite;
+	animation-delay: -2.5s;
 }
 
 .leclercBorder::before {
-  content: "";
-  position: absolute;
-  left: -65%;
-  top: -25%;
-  width: 700px;
-  height: 700px;
-  background-image: conic-gradient(
-    transparent,
-    transparent,
-    transparent,
-    #f72a31
-  );
-  animation: leclercline 5s linear infinite;
+	content: "";
+	position: absolute;
+	left: -65%;
+	top: -25%;
+	width: 700px;
+	height: 700px;
+	background-image: conic-gradient(transparent, transparent, transparent, #f72a31);
+	animation: leclercline 5s linear infinite;
 }
 
 @keyframes leclercline {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 .leclercDriverCard {
-  position: relative;
-  width: 320px;
-  height: 450px;
-  overflow: hidden;
-  border-radius: 20px;
+	position: relative;
+	width: 320px;
+	height: 450px;
+	overflow: hidden;
+	border-radius: 20px;
 }
 
 .leclercDriverCard .leclercPoster {
-  position: relative;
-  overflow: hidden;
-  height: 100%;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
 }
 
 .leclercDriverCard .leclercPoster::before {
-  content: "";
-  position: absolute;
-  bottom: -180px;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(0deg, #d63338 50%, transparent);
-  transition: 0.5s;
-  z-index: 1;
+	content: "";
+	position: absolute;
+	bottom: -180px;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(0deg, #d63338 50%, transparent);
+	transition: 0.5s;
+	z-index: 1;
 }
 
 .leclercDriverCard:hover .leclercPoster::before {
-  bottom: -15%;
+	bottom: -15%;
 }
 
 .leclercDriverCard .leclercPoster img {
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
-  transition: 0.5s;
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+	transition: 0.5s;
 }
 
 .leclercDriverCard:hover .leclercPoster img {
-  transform: translateY(-15px);
-  filter: blur(2px);
+	transform: translateY(-15px);
+	filter: blur(2px);
 }
 
 .leclercDriverCard h2 {
-  position: absolute;
-  width: 100%;
-  bottom: 20px;
-  left: 10%;
-  color: #000000;
-  z-index: 2;
-  font-family: sans-serif;
+	position: absolute;
+	width: 100%;
+	bottom: 20px;
+	left: 10%;
+	color: #000000;
+	z-index: 2;
+	font-family: sans-serif;
 }
 
 .leclercDriverCard:hover h2 {
-  bottom: 23%;
+	bottom: 23%;
 }
 
 .leclercDriverCard h3 {
-  position: absolute;
-  width: 100%;
-  bottom: 2px;
-  left: 10%;
-  color: #000000;
-  z-index: 2;
-  font-family: sans-serif;
+	position: absolute;
+	width: 100%;
+	bottom: 2px;
+	left: 10%;
+	color: #000000;
+	z-index: 2;
+	font-family: sans-serif;
 }
 
 .leclercDriverCard:hover h3 {
-  bottom: 18%;
+	bottom: 18%;
 }
 
 .leclercDriverCard p {
-  position: absolute;
-  width: 85%;
-  bottom: -90px;
-  left: 10%;
-  color: #000000;
-  z-index: 2;
-  font-family: sans-serif;
+	position: absolute;
+	width: 85%;
+	bottom: -90px;
+	left: 10%;
+	color: #000000;
+	z-index: 2;
+	font-family: sans-serif;
 }
 
 .leclercDriverCard:hover p {
-  bottom: 0;
+	bottom: 0;
 }
 
 .verstappenDriverCard {
-  position: absolute;
-  left: 7%;
+	position: absolute;
+	left: 7%;
 }
 
 .hamiltonDriverCard {
-  position: absolute;
-  justify-content: center;
+	position: absolute;
+	justify-content: center;
 }
 
 .leclercDriverCard {
-  position: absolute;
-  right: 7%;
+	position: absolute;
+	right: 7%;
 }
 
 .racePage {
-  position: relative;
-  justify-content: center;
+	position: relative;
+	justify-content: center;
 }
 
 .finishline {
-  width: 100%;
-  height: 100vh;
+	width: 100%;
+	height: 100vh;
 }
 
 .racePage .RedbullCar {
-  height: 15%;
-  position: absolute;
-  top: 50%;
-  left: -25%;
+	height: 15%;
+	position: absolute;
+	top: 50%;
+	left: -25%;
 }
 
 .f1Logo {
-  position: absolute;
-  top: 2%;
-  left: 37%;
-  width: 300px;
+	position: absolute;
+	top: 2%;
+	left: 37%;
+	width: 300px;
 }
 
 .racePage:hover .RedbullCar {
-  height: 15%;
-  position: absolute;
-  top: 50%;
-  left: -25%;
-  animation: redbull 0.3s 2s linear;
-  animation-delay: 0.8s;
+	height: 15%;
+	position: absolute;
+	top: 50%;
+	left: -25%;
+	animation: redbull 0.3s 2s linear;
+	animation-delay: 0.8s;
 }
 @keyframes redbull {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(2000px);
-  }
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(2000px);
+	}
 }
 
 .racePage .ferrariCar {
-  height: 20%;
-  position: absolute;
-  top: 65%;
-  left: -50%;
+	height: 20%;
+	position: absolute;
+	top: 65%;
+	left: -50%;
 }
 
 .racePage:hover .ferrariCar {
-  height: 20%;
-  position: absolute;
-  top: 65%;
-  left: -50%;
-  animation: ferrari 0.4s 2s linear;
-  animation-delay: 0.8s;
+	height: 20%;
+	position: absolute;
+	top: 65%;
+	left: -50%;
+	animation: ferrari 0.4s 2s linear;
+	animation-delay: 0.8s;
 }
 
 @keyframes ferrari {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(2000px);
-  }
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(2000px);
+	}
 }
