@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ekteskap</title>
+    <link rel="stylesheet" href="ekteskap.css" />
+  </head>
+  <body>
+    <a href="index.html">Tilbake</a>
+    <div class="welcome">
+      <h1>Ekteskap</h1>
+      <div class="indexer">
+        <img src="/img/marriage.webp" alt="" />
+        <p>
+          <strong style="text-decoration: underline">Unike Bryllupssteder i Las Vegas</strong><br />
+
+          Utforsk de mest unike bryllupsstedene i Las Vegas, fra glamorøse hotellkapeller til sjarmerende utendørslokaler. Oppdag spesielle tilbud, temaer og atmosfærer som gjør hvert bryllup
+          minneverdig.
+        </p>
+      </div>
+      <div class="indexer">
+        <p>
+          <strong style="text-decoration: underline">Bryllupsplanlegging i Las Vegas: Alt du trenger å vite</strong><br />
+          Få oversikt over de juridiske kravene for å gifte seg i Las Vegas, inkludert informasjon om ekteskapslisenser, ventetider og nødvendig dokumentasjon. Tipsene inkluderer også praktisk råd om
+          budsjett, tidslinjer og lokale tjenester.
+        </p>
+        <img src="/img/marriage2.webp" alt="" />
+      </div>
+      <div class="indexer">
+        <img src="/img/marriage3.webp" alt="" />
+        <p>
+          <strong style="text-decoration: underline">Las Vegas Honeymoon Bliss: Utforsk Destinasjonen etter 'Ja</strong><br />
+
+          Oppdag romantiske aktiviteter og steder å utforske i Las Vegas for en uforglemmelig bryllupsreise. Fra eksklusive restauranter og underholdning til avslappende spa-opplevelser – denne
+          artikkelen guider deg gjennom hvordan du kan forlenge kjærlighetsfeiringen i denne pulserende byen.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+----
+
+
+body {
+  margin: 0;
+  background-image: url(/img/background_ekteskap.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+
+  font-family: "Roboto", sans-serif;
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer and Edge */
+  user-select: none; /* Standard syntax */
+}
+.welcome h1 {
+  width: 100%;
+  background-color: aliceblue;
+  text-align: center;
+  animation: ghoster 2s infinite;
+}
+
+.indexer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  animation-name: slideUp;
+  animation-duration: 3s;
+}
+.indexer img {
+  width: 25%;
+  animation: rotater 2s infinite;
+  border-radius: 20px;
+}
+.indexer p {
+  width: 25%;
+  text-align: left;
+  margin: 1rem;
+  padding: 2rem;
+  background-color: black;
+  animation: rainbow 4s linear infinite;
+  border-radius: 20px;
+  letter-spacing: 5px;
+}
+a {
+  color: #3c97d4;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 500px;
+  background-color: white;
+  padding: 10px;
+}
+a:hover {
+  background-color: lightgrey;
+}
+@keyframes slideUp {
+  0%,
+  50% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  60%,
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes rotater {
+  0% {
+    -webkit-transform: rotate(0) scale(1, 1);
+  }
+  20% {
+    -webkit-transform: rotate(-3deg) scale(0.8, 0.8);
+  }
+  40% {
+    -webkit-transform: rotate(0) scale(1, 1);
+  }
+  60% {
+    -webkit-transform: rotate(0) scale(1, 1);
+  }
+  80% {
+    -webkit-transform: rotate(3deg) scale(0.8, 0.8);
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1, 1);
+  }
+}
+@keyframes rainbow {
+  0% {
+    color: red;
+  }
+  10% {
+    color: orange;
+  }
+  20% {
+    color: yellow;
+  }
+  30% {
+    color: green;
+  }
+  40% {
+    color: blue;
+  }
+  50% {
+    color: green;
+  }
+  60% {
+    color: yellow;
+  }
+  75% {
+    color: orange;
+  }
+  100% {
+    color: red;
+  }
+}
+@keyframes ghoster {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

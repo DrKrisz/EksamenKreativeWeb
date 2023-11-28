@@ -1,0 +1,212 @@
+body {
+  background-size: cover;
+  background-image: url(ImgCasino/casino\ img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#title {
+  color: yellow;
+  position: absolute;
+  left: 460px;
+  text-align: center;
+  bottom: 250px;
+  right: 480px;
+  top: 240px;
+  font-family: sans-serif;
+  font-size: 400%;
+  animation-name: fade;
+  animation-duration: 8s;
+  animation-delay: 2, 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#quote {
+  position: absolute;
+  left: 1119px;
+  border-style: solid;
+  border-color: aquamarine;
+  border-radius: 20px;
+  border-width: 10px;
+  transition: transform 1s ease-in-out;
+  box-shadow: 0 4px 8px;
+}
+#quote:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px;
+}
+
+#sjetong1 {
+  position: absolute;
+  left: 430px;
+  bottom: 400px;
+  top: 290px;
+  text-align: center;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-name: spinn;
+  animation-timing-function: linear;
+}
+#sjetong1:hover {
+  animation-name: fade2;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes spinn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fade2 {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 10%;
+  }
+}
+
+#sjetong2 {
+  position: absolute;
+  left: 590px;
+  bottom: 400px;
+  top: 200px;
+  text-align: center;
+  animation-name: spinn;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+}
+#sjetong2:hover {
+  animation-iteration-count: infinite;
+  animation-name: fade2;
+  animation-duration: 0.5s;
+}
+
+#sjetong3 {
+  position: absolute;
+  left: 590px;
+  bottom: 400px;
+  top: 410px;
+  text-align: center;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: spinn;
+}
+#sjetong3:hover {
+  animation-duration: 0.5s;
+  animation-name: fade2;
+  animation-iteration-count: infinite;
+}
+
+#sjetong4 {
+  position: absolute;
+  left: 735px;
+  bottom: 400px;
+  text-align: center;
+  top: 290px;
+  animation-name: spinn;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#sjetong4:hover {
+  animation-duration: 0.5s;
+  animation-name: fade2;
+  animation-iteration-count: infinite;
+}
+
+#hjul {
+  position: absolute;
+  animation-timing-function: linear;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-name: spinn;
+  animation-delay: 3s;
+}
+
+#alder {
+  position: absolute;
+  bottom: 75px;
+  left: 80px;
+  top: 360px;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#alder:hover {
+  animation-name: popout;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes popout {
+  0% {
+    transform: scale(0);
+  }
+  10% {
+    transform: scale(2, 5);
+  }
+
+  95% {
+    transform: scale(2, 5);
+  }
+}
+
+.text1 {
+  color: red;
+  font-size: 60px;
+  left: 260px;
+  position: absolute;
+  font-family: sans-serif;
+}
+
+.text2 {
+  color: aqua;
+  font-family: sans-serif;
+  position: absolute;
+  font-size: 60px;
+}
+
+#terning {
+  position: absolute;
+  bottom: 100px;
+  top: 500px;
+  left: 110px;
+  animation-name: moves;
+  animation-delay: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+}
+
+@keyframes moves {
+  0% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(890px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+}
